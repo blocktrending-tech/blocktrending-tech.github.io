@@ -22,7 +22,7 @@
     <div class="con-conter clearfix" style="display: flex;justify-content: space-between">
         <div class="navLogo">
             <h1>
-                <a href="#http://www.hurongsoft.com/"><img src="./logoNew.png" alt="BlockTrending" title="BlockTrending"/></a>
+                <a href="#/"><img src="./logoNew.png" alt="BlockTrending" title="BlockTrending"/></a>
             </h1>
             <div class="abstract"><h2>区块链技术应用<span style="font-size:14px;">做区块链，找 BlockTrending</span></h2>提供成熟、安全的区块链应用系统和解决方案</div>
         </div>
@@ -45,10 +45,10 @@
                 </div>
                 <div class="weblinkTop">
                     <dl class="linkdlTop">
-                        <dd><a href="#http://trace.hurongsoft.com" rel="nofollow" target="_blank">区块链防伪溯源</a></dd>
-                        <dd><a href="#http://ex.hurongsoft.com" rel="nofollow" target="_blank">区块链资产交易</a></dd>
-                        <dd><a href="#http://scf.hurongsoft.com" rel="nofollow" target="_blank">区块链供应链金融</a></dd>
-                        <dd><a href="#http://sns.hurongsoft.com" rel="nofollow" target="_blank">区块链社交电商</a></dd>
+                        <dd><a href="#" rel="nofollow" target="_blank">区块链防伪溯源</a></dd>
+                        <dd><a href="#" rel="nofollow" target="_blank">区块链资产交易</a></dd>
+                        <dd><a href="#" rel="nofollow" target="_blank">区块链供应链金融</a></dd>
+                        <dd><a href="#" rel="nofollow" target="_blank">区块链社交电商</a></dd>
                     </dl>
                     <dl class="linkdl">
                     </dl>
@@ -209,7 +209,7 @@
                     $('#scuermask').show();
                 } else {
 
-                    var url  ="http://www.hurongsoft.com/wap/savePhoneWebPhone.do";
+                    var url  ="";
                     //不知道为什么 官网上路径中间会添加article节点
                     url = url.replace("article/","");
                     $.ajax({
@@ -247,71 +247,7 @@
                         $(".libacktop").fadeOut(200);
                     };
                 });
-
-            };
-            // 百度商桥咨询弹框
-            function opensq(){
-                var openUrl = "http://p.qiao.baidu.com/cps/chat?siteId=13090938&userId=10584026";
-                var iWidth = 770;
-                var iHeight = 550;
-                var iTop = (window.screen.availHeight-30-iHeight)/2;
-                var iLeft = (window.screen.availWidth-10-iWidth)/2;
-                window.open(openUrl,"","height="+iHeight+", width="+iWidth+", top="+iTop+", left="+iLeft);
             }
-            //电话弹窗显示
-            //alert(111)
-            function phoneShow(){
-                clearInterval(telset);
-                $('.telpbox').addClass('showanimation').removeClass('hideanimation');
-                $('#telphone').val('');
-            }
-            function codeShow(){
-                $('.codeShowLeft').show();
-            }
-            function codeHide(){
-                $('.codeShowLeft').hide();
-            }
-            function phoneShowClose(){
-                telset = setInterval("time()",120000);
-                $('.telpbox').addClass('hideanimation');
-            }
-            function errClose(){
-                $("#errtipbox,#scuermask").hide();
-            }
-            function successClose(){
-                $('#scuermask,#sucpbox').hide();
-                $('#telpbox').addClass('hideanimation');
-            }
-            function goTopTwo(){
-                $("html,body").animate({scrollTop:0},"300");
-                $(this).css("display", "none");
-            }
-            //手机访问pc网站跳移动端
-            //            debugger
-            /*            var PC = IsPC();
-                         if (!PC) {
-                             window.location.href ='http://m.dc.hurongsoft.com/'; //跳转地址
-                         }
-                        function IsPC(){
-                            var userAgentInfo = navigator.userAgent;
-
-                            var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
-
-                            var flag = true;
-
-                            for (var v = 0; v < Agents.length; v++) {
-
-                                if (userAgentInfo.indexOf(Agents[v]) > 0) {
-
-                                    flag = false;
-
-                                    break;
-                                }
-
-                            }
-
-                            return flag;
-                        }*/
         </script>
     </div>
 </div>
